@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NordAlpha – Plein air, pêche & survie</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --accent: #16a34a; /* vert forêt */
+      }
+      body {
+        font-family: 'Russo One', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-900 text-white">
+    <!-- HERO SECTION -->
+    <header class="relative h-screen flex flex-col">
+      <!-- Background image -->
+      <div
+        class="absolute inset-0 bg-cover bg-center blur-sm"
+        style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=cover&w=1920&q=80');"
+      ></div>
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black opacity-70"></div>
+
+      <!-- NAVBAR -->
+      <nav class="relative z-10 p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+          <!-- Replace with your logo file in /public or same dir -->
+          <img
+            src="logo.png"
+            alt="Logo NordAlpha"
+            class="h-10 w-10 object-contain drop-shadow-lg"
+          />
+          <span class="text-2xl tracking-wide">NordAlpha</span>
+        </div>
+        <div>
+          <!-- Future nav links -->
+          <a href="#produits" class="hidden sm:inline-block px-4 py-2">Produits</a>
+          <a href="#contact" class="hidden sm:inline-block px-4 py-2">Contact</a>
+        </div>
+      </nav>
+
+      <!-- HERO CONTENT -->
+      <div class="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          Équipement pour aventuriers
+        </h1>
+        <p class="max-w-xl text-lg md:text-2xl mb-8">
+          Pêche • Camping • Survie – Tout le nécessaire pour conquérir la nature
+        </p>
+        <a
+          href="#" 
+          class="inline-block bg-[var(--accent)] hover:bg-green-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all"
+          >Boutique à venir</a
+        >
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="relative z-10 flex justify-center pb-6 animate-bounce">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-white"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <!-- PLACEHOLDER PRODUITS -->
+    <section id="produits" class="bg-gray-800 py-16 px-4">
+      <div class="max-w-6xl mx-auto text-center mb-14">
+        <h2 class="text-4xl mb-4">Bientôt disponible</h2>
+        <p class="text-gray-300">
+          Notre collection complète de plus de 300 articles arrivera très bientôt.
+          Restez à l'écoute !
+        </p>
+      </div>
+      <div
+        class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <!-- Product card example -->
+        <div class="bg-gray-700 rounded-2xl shadow-lg overflow-hidden">
+          <div
+            class="h-48 bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1613031099773-224474956607?auto=format&fit=crop&w=800&q=80');"
+          ></div>
+          <div class="p-4">
+            <h3 class="text-xl mb-2">Kit feu de camp</h3>
+            <p class="text-gray-300 text-sm mb-4">
+              Allumez un feu en toute condition grâce à notre pierre à feu et
+              amadou naturel.
+            </p>
+            <button
+              class="bg-[var(--accent)] hover:bg-green-600 text-white px-4 py-2 rounded-full w-full"
+              disabled
+            >
+              À venir
+            </button>
+          </div>
+        </div>
+        <!-- Duplicate above for more placeholders -->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-gray-900 py-8 text-center">
+      <p class="text-gray-400">
+        © 2025 NordAlpha. Tous droits réservés.
+      </p>
+      <p class="text-sm text-gray-500">
+        Fait avec passion depuis la forêt canadienne.
+      </p>
+    </footer>
+  </body>
+</html>
